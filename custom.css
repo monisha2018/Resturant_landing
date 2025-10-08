@@ -1,0 +1,198 @@
+/* ----------- Root Colors & Fonts ----------- */
+:root {
+  --brand: #0d6efd;
+  --text-dark: #212529;
+  --bg-light: #f8f9fa;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  color: var(--text-dark);
+  background-color: #fff;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+/* ----------- Navbar ----------- */
+.navbar-brand {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.nav-link {
+  font-weight: 500;
+}
+
+.nav-link.active {
+  color: var(--brand) !important;
+  font-weight: 600;
+}
+
+/* ----------- Hero Section ----------- */
+#hero {
+  color: #f7f6f6eb;
+  text-shadow: 0 2px 6px rgba(246, 241, 241, 0.981);
+  min-height: 70vh;
+  display: flex;
+  align-items: center;
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+}
+
+/* Hero Buttons */
+#hero .btn-primary {
+  color: #fff;           /* White text */
+  background-color: var(--brand);
+  border-color: var(--brand);
+}
+
+#hero .btn-primary:hover {
+  background-color: #0b5ed7;
+  border-color: #0a58ca;
+  color: #fff;
+}
+
+#hero .btn-outline-light {
+  color: #fff;
+  border-color: #fff;
+}
+
+#hero .btn-outline-light:hover {
+  background-color: #fff;
+  color: var(--brand);
+}
+
+/* ----------- About Section ----------- */
+#about img {
+  border-radius: 12px;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* ----------- Menu Cards ----------- */
+#menu .card {
+  border: none;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.08);
+  transition: transform 0.2s ease;
+}
+
+#menu .card:hover {
+  transform: translateY(-5px);
+}
+
+#menu img {
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ----------- Gallery Carousel ----------- */
+#gallery img {
+  height: 400px;
+  object-fit: cover;
+}
+
+.carousel-caption h5 {
+  background: rgba(0,0,0,0.5);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+}
+
+/* ----------- Testimonials Carousel ----------- */
+#testimonials {
+  background-color: var(--bg-light);
+}
+
+#testimonials .carousel-item {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#testimonials .lead {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
+#testimonials h5 {
+  font-weight: 600;
+  color: var(--brand);
+}
+
+/* ----------- Contact Section ----------- */
+#contact address {
+  font-style: normal;
+  line-height: 1.6;
+  margin-bottom: 1rem;
+}
+
+#contact .form-control:focus {
+  border-color: var(--brand);
+  box-shadow: 0 0 0 0.2rem rgba(13,110,253,.25);
+}
+
+/* ----------- Footer ----------- */
+footer {
+  background: var(--bg-light);
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #666;
+}
+
+footer a {
+  color: var(--brand);
+  text-decoration: none;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
+
+/* ----------- General Image & Focus Styles ----------- */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a:focus, button:focus, input:focus, textarea:focus {
+  outline: 3px solid rgba(13,110,253,0.4);
+  outline-offset: 2px;
+}
+
+/* ----------- Responsive Tweaks ----------- */
+@media (max-width: 768px) {
+  #hero h1 {
+    font-size: 2rem;
+  }
+  #hero p {
+    font-size: 1rem;
+  }
+  #menu .card img {
+    height: 180px;
+  }
+  #gallery img {
+    height: 250px;
+  }
+}
+/* ----------- Footer (Black & White) ----------- */
+footer {
+  background: #000;       /* Black background */
+  padding: 1rem 0;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #fff;            /* White text */
+}
+
+footer a {
+  color: #fff;            /* White links */
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+footer a:hover {
+  text-decoration: underline;
+  color: #ddd;            /* Light grey on hover */
+}
